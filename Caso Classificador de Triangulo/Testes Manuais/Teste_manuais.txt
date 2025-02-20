@@ -1,0 +1,125 @@
+Campo: Lado 1
+Testes Positivos:
+   Verifique se o usuário consegue inserir um número inteiro positivo válido no campo de entrada.  
+   Verifique se o texto de espaço reservado "Lado 1" está visível e exibido corretamente quando o campo de entrada está vazio.  
+   Certifique-se de que o campo de entrada aceita números decimais e os exibe corretamente.  
+   Valide se o campo de entrada não aceita números negativos e mostra uma mensagem de erro apropriada se tentado.  
+   Confirme se o campo de entrada permite o número máximo de entradas permitido (se especificado) e se ele se comporta conforme o esperado.  
+
+Testes negativos:
+   Teste se a inserção de caracteres não numéricos (por exemplo, letras ou símbolos) não permite o envio e exibe uma mensagem de erro.  
+   Verifique se deixar o campo de entrada vazio impede o envio do formulário e mostra um erro de campo obrigatório.  
+   Tente inserir um número maior que o limite máximo (se especificado) e verifique se ele não aceita o valor.  
+   Valide se a inserção de caracteres especiais (por exemplo, @, #, $, %) resulta em uma mensagem de erro ou nenhuma ação.  
+   Verifique se tentar inserir um número muito grande excede o limite do campo de entrada e resulta em erro.  
+
+Cenários de teste criativos:
+   Simule um cenário em que o usuário insere números rapidamente e verifica se há problemas de desempenho ou atraso de entrada.  
+   Teste como o campo de entrada se comporta quando um usuário tenta copiar e colar uma grande sequência de números nele.  
+   Verifique o comportamento quando o campo de entrada está em foco e o usuário tenta inserir um número usando o teclado enquanto também usa o mouse para clicar em outro lugar.  
+   Verifique a acessibilidade do campo de entrada testando-o com leitores de tela e garantindo que ele leia o espaço reservado corretamente.  
+   Avalie a capacidade de resposta do campo de entrada redimensionando a janela do navegador e garantindo que o espaço reservado e o texto de entrada permaneçam visíveis e utilizáveis.  
+
+Campo: Lado 2 
+Testes Positivos:
+   Verifique se a entrada aceita valores numéricos válidos (por exemplo, 1, 10, 100).  
+   Verifique se o texto do espaço reservado "Lado 2" é exibido quando a entrada está vazia.  
+   -se de que a entrada pode aceitar valores decimais (por exemplo, 1,5, 2,75).  
+   Valide se o campo de entrada permite ao usuário incrementar e decrementar valores usando as teclas de seta para cima e para baixo.  
+   Confirme se o campo de entrada atualiza seu valor em tempo real conforme o usuário digital.  
+
+Testes Negativos:
+   Teste o campo de entrada inserindo caracteres não numéricos (por exemplo, "abc", "#$%") e verifique se ele não os aceita.  
+   Tente enviar o formulário com um campo de entrada vazio e marque para mensagens de erro ou validação apropriadas.  
+   Insira um número negativo e verifique se ele não é aceito se o contexto exigir apenas valores positivos.  
+   Verifique se a entrada não aceita números excessivamente grandes (por exemplo, além do limite máximo de uma entrada numérica).  
+   Valide se o campo não aceita várias casas decimais (por exemplo, "1.2.3").  
+
+Cenários de teste criativos:
+   Simule um cenário em que o usuário digita e exclui números rapidamente para ver se a entrada pode lidar com alterações rápidas sem erros.  
+   Teste o comportamento da entrada quando o usuário cola uma grande sequência de números ou caracteres inválidos para ver se ele lida com entradas inesperadas com elegância.  
+   Verifique a acessibilidade do campo de entrada navegando até ele usando apenas os controles do teclado e verificando se é possível focalizá-lo e interagir com ele.  
+   Explore o impacto da alteração da orientação do dispositivo (para dispositivos móveis) no comportamento e layout do campo de entrada.  
+   Avalie como o campo de entrada se comporta quando o usuário tenta inserir valores usando comandos de voz ou recursos de ditado.  
+
+Campo: Lado 3 
+Testes Positivos:
+   Verifique se o usuário pode inserir um número inteiro positivo válido (por exemplo, 5) no campo e se ele é aceito.  
+   Verifique se o texto do espaço reservado "Lado 3" é exibido quando o campo de entrada está vazio.  
+   -se de que o campo de entrada aceita números decimais (por exemplo, 5,5) e os exiba corretamente.  
+   Teste se o campo de entrada retém o valor depois que o usuário envia o formulário.  
+   Valide se o campo de entrada permite que o usuário edite o número e que as alterações sejam refletidas imediatamente.  
+ 
+Testes negativos:
+   Tente inserir um número negativo (por exemplo, 3 ) e verifique se não é aceito.  
+   Insira caracteres não numéricos (por exemplo , "abc") e certifique-se de que uma mensagem de erro ou feedback de validação seja exibido.  
+   Verifique se o campo de entrada não aceita caracteres especiais (por exemplo, $, %, &) e exibe um erro.  
+   Teste o comportamento quando o campo de entrada for deixado em branco e o formulário for enviado, garantindo que um erro de validação apareça.  
+   Tente inserir um número que exceda o limite máximo (se houver) e verifique se ele foi rejeitado.  
+
+Cenários de teste criativos:
+   Simule um cenário em que o usuário cola uma longa sequência de números no campo de entrada e observe como o sistema lida com isso.  
+   Teste o comportamento do campo de entrada quando o usuário altera rapidamente o valor diversas vezes em rápida sucessão.  
+   Explore o impacto do uso de atalhos de teclado (por exemplo, Ctrl+C, Ctrl+V) para copiar e colar valores no campo de entrada.  
+   Verifique como o campo de entrada se comporta quando o usuário interage com ele usando apenas a navegação do teclado (por exemplo, tecla Tab).  
+   Investigue a acessibilidade do campo de entrada testando com leitores de tela para garantir que ele leia o espaço reservado e quaisquer mensagens de validação corretamente.  
+
+Botão: Classificar 
+
+Testes Positivos:
+   Verifique se clicar no botão aciona a função de classificação para triângulos quando entradas válidas são fornecidas.  
+   Certifique-se de que o botão esteja claramente identificado como "Classificar" e esteja visível para os usuários.  
+   Teste se o botão está habilitado e clicável quando os campos de entrada necessários para a classificação do triângulo forem preenchidos.  
+   Confirme se o botão responde aos eventos de passagem do mouse alterando sua aparência (por exemplo, mudança de cor).  
+   Valide se o botão pode ser ativado usando a navegação do teclado (por exemplo, pressionando a tecla "Enter").  
+
+Testes negativos:
+   Verifique se clicar no botão sem nenhuma entrada não aciona a função de classificação de triângulos e fornece uma mensagem de erro relevante.  
+   Teste a resposta do botão quando entradas inválidas (por exemplo, números negativos ou valores não numéricos) forem fornecidas para garantir que ele não classifique o triângulo.  
+   Verifique se o botão permanece inativo (ou desabilitado) quando os campos obrigatórios estão vazios ou contêm dados inválidos.  
+   Certifique-se de que clicar no botão várias vezes em rápida sucessão não leve a comportamentos inesperados ou a alertas múltiplos.  
+
+Cenários de teste criativos:
+   Teste a funcionalidade do botão quando ele for clicado depois que um usuário redefinir os campos de entrada para garantir que ele lide com as alterações de estado corretamente.  
+   Simule um cenário em que o botão é clicado depois que um usuário seleciona vários tipos de triângulo (equilátero, isósceles, escaleno) e verifique se a saída corresponde ao tipo selecionado.  
+   Investigue o comportamento do botão quando o usuário tenta clicar nele enquanto uma animação em andamento ou um processo de carregamento é exibido na tela.  
+   Explore a experiência do usuário quando o botão é clicado com tecnologias assistivas (por exemplo, leitores de tela) para garantir a conformidade de acessibilidade.  
+   Teste a funcionalidade do botão quando usado em um ambiente móvel para garantir que ele seja responsivo e fácil de usar em dispositivos sensíveis ao toque.  
+
+Area do Triangulo: 
+Testes Positivos:
+ Verifique se a tela é exibida corretamente na página quando o usuário a acessa.
+
+ Verifique se as dimensões da tela estão definidas para 300x300 pixels e se o conteúdo cabe nessa área.
+
+ Teste se desenhar um triângulo na tela usando as ferramentas apropriadas é bem-sucedido e visualmente preciso.
+
+ Valide se a tela permanece interativa e responsiva às entradas do usuário, como cliques do mouse ou eventos de toque.
+
+ Certifique-se de que a tela possa ser limpa e redesenhada diversas vezes sem problemas de desempenho.
+
+
+Testes negativos:
+ Tente desenhar na tela sem nenhuma inicialização ou configuração prévia para garantir que ela lide com erros sem problemas.
+
+ Verifique o comportamento da tela quando os atributos de largura e altura são definidos como valores negativos.
+
+ Teste a resposta da tela ao tentar desenhar com parâmetros inválidos (por exemplo, valores não numéricos para coordenadas).
+
+ Verifique se a tela não exibe nenhum conteúdo se o navegador não suportar o elemento de tela.
+
+ Tente acessar o elemento canvas antes que ele seja totalmente carregado para ver se há algum erro.
+
+
+Cenários de teste criativos:
+ Simule um usuário tentando desenhar um triângulo usando atalhos de teclado e verifique se a tela suporta essa funcionalidade.
+
+ Teste a tela com diferentes esquemas de cores e gradientes para ver como ela renderiza vários estilos de triângulos.
+
+ Crie um cenário em que vários usuários tentem desenhar na tela simultaneamente (se aplicável) para observar como ele lida com interações simultâneas.
+
+ Implemente um recurso que permita aos usuários salvar seus desenhos como imagens e testar se essa funcionalidade funciona corretamente.
+
+ Explore o efeito do redimensionamento da janela do navegador na tela e verifique se o conteúdo é dimensionado ou se adapta adequadamente.
+
+
