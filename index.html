@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificador de Triângulos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            max-width: 450px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+        input {
+            transition: all 0.3s ease-in-out;
+            text-align: center;
+        }
+        input:focus {
+            border-color: #ffeb3b;
+            box-shadow: 0 0 10px rgba(255, 235, 59, 0.7);
+        }
+        button {
+            transition: transform 0.2s;
+        }
+        button:active {
+            transform: scale(0.95);
+        }
+        canvas {
+            background: white;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container p-4">
+        <h2 class="mb-4">Classificador de Triângulos</h2>
+        <div class="mb-3">
+            <input type="number" id="lado1" class="form-control mb-2" placeholder="Lado 1">
+            <input type="number" id="lado2" class="form-control mb-2" placeholder="Lado 2">
+            <input type="number" id="lado3" class="form-control mb-2" placeholder="Lado 3">
+        </div>
+        <button class="btn btn-warning w-100 fw-bold" onclick="classificarTriangulo()">Classificar</button>
+        <p id="resultado" class="mt-3 fw-bold"></p>
+        <canvas id="trianguloCanvas" width="300" height="300"></canvas>
+    </div>
+    
+    <script>
+        function classificarTriangulo() {
+            const lado1 = parseFloat(document.getElementById("lado1").value);
+            const lado2 = parseFloat(document.getElementById("lado2").value);
+            const lado3 = parseFloat(document.getElementById("lado3").value);
+            const resultado = document.getElementById("resultado");
+            const canvas = document.getElementById("trianguloCanvas");
+            const ctx = canvas.getContext("2d");
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            if (isNaN(lado1) || isNaN(lado2) || isNaN(lado3)) {
+                resultado.innerText = "Entrada inválida";
+                return;
+            }
+
+            if (lado1 <= 0 || lado2 <= 0 || lado3 <= 0) {
+                resultado.innerText = "Não é um triângulo";
+                return;
+            }
+
+            if (lado1 + lado2 <= lado3 || lado1 + lado3 <= lado2 || lado2 + lado3 <= lado1) {
+                resultado.innerText = "Não é um triângulo";
+                return;
+            }
+
+            let classificacao;
+            if (lado1 === lado2 && lado2 === lado3) {
+                classificacao = "Triângulo equilátero";
+            } else if (lado1 === lado2 || lado1 === lado3 || lado2 === lado3) {
+                classificacao = "Triângulo isósceles";
+            } else {
+                classificacao = "Triângulo escaleno";
+            }
+
+            resultado.innerText = classificacao;
+            desenharTriangulo(lado1, lado2, lado3);
+        }
+
+        function desenharTriangulo(a, b, c) {
+            const canvas = document.getElementById("trianguloCanvas");
+            const ctx = canvas.getContext("2d");
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            const x1 = 50, y1 = 250;
+            const x2 = 250, y2 = 250;
+            const x3 = 150, y3 = 250 - Math.min(a, b, c) * 10;
+
+            ctx.beginPath();
+            ctx.moveTo(x1, y1);
+            ctx.lineTo(x2, y2);
+            ctx.lineTo(x3, y3);
+            ctx.closePath();
+
+            ctx.strokeStyle = "black";
+            ctx.lineWidth = 3;
+            ctx.stroke();
+            ctx.fillStyle = "rgba(255, 193, 7, 0.8)";
+            ctx.fill();
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
