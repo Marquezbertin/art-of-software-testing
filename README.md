@@ -1,1 +1,0 @@
-# art-of-software-testing
