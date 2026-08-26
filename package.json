@@ -1,0 +1,21 @@
+{
+  "name": "art-of-software-testing",
+  "version": "1.0.0",
+  "description": "Implementação prática dos exemplos do livro The Art of Software Testing, com testes unitários e de interface",
+  "main": "triangulo2.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "software-testing",
+    "jest",
+    "selenium",
+    "art-of-software-testing"
+  ],
+  "author": "Bruno Bertin Marquez",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^29.7.0"
+  },
+  "devDependencies": {}
+}
