@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Se vocÃª usar este software, cite-o como abaixo."
+title: "Projeto pr├ítico que visa implementar os exemplos do livro The Art of Software Testing, aplicando diferentes abordagens e frameworks para analisar a efic├ícia dos testes e explorar boas pr├íticas de qualidade de software"
+authors:
+  - family-names: Marquez
+    given-names: Bruno Bertin
+version: 1.0.0
+date-released: "2026-11-12"
+url: "https://github.com/Marquezbertin/art-of-software-testing"
+repository-code: "https://github.com/Marquezbertin/art-of-software-testing"
