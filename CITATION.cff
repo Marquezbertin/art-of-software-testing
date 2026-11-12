@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: "Se vocÃª usar este software, cite-o como abaixo."
-title: "Projeto pr├ítico que visa implementar os exemplos do livro The Art of Software Testing, aplicando diferentes abordagens e frameworks para analisar a efic├ícia dos testes e explorar boas pr├íticas de qualidade de software"
+message: "Se você usar este software, cite-o como abaixo."
+title: "Projeto prático que visa implementar os exemplos do livro The Art of Software Testing, aplicando diferentes abordagens e frameworks para analisar a eficácia dos testes e explorar boas práticas de qualidade de software"
 authors:
   - family-names: Marquez
     given-names: Bruno Bertin
